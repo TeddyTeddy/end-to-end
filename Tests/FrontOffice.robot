@@ -10,14 +10,18 @@ Test Teardown   CommonWeb.Test Teardown
 
 
 *** Test Cases ***
-Should Be Able to Access "Team" Page
+Should Be Able to Access "Landing Page"
     [Documentation]  Should Be Able to Access "Team" Page
     [Tags]  Smoke
-    Log     Should Be Able to Access "Team" Page
+    FrontOfficeApp.Go To Landing Page
+    FrontOfficeApp.Verify "TEAM" Item Exists On The Upper Right Corner
 
-"Team Page" Should Match The Requirements
-    [Documentation]  "Team Page" Should Match The Requirements
+"Team Section" Should Match The Requirements
+    [Documentation]  "Team Section" Should Match The Requirements
     [Tags]  Smoke
-    Log     "Team Page" Should Match The Requirements
+    FrontOfficeApp.Go To Landing Page
+    FrontOfficeApp.Verify "TEAM" Item Exists On The Upper Right Corner
+    FrontOfficeApp.Select "TEAM" Item
+    FrontOfficeApp.Verify "Team Section" Contains Correct Contents
 
 
