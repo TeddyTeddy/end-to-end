@@ -10,6 +10,7 @@ ${URL}         http://www.robotframeworktutorial.com/front-office/
 *** Keywords ***
 Go To Landing Page
     LandingPage.Do Goto    ${URL}
+    LandingPage.Verify Loaded
     TopNavSection.Do Verify "TEAM" Item Exists
 
 Select "TEAM" Item
