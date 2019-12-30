@@ -8,6 +8,7 @@ ${TEAM_SECTION_HEADER2_CONTENT}      OUR AMAZING TEAM
 
 *** Keywords ***
 Do Verify "Team Section" Contents
+    Wait Until Element Is Visible   ${TEAM_SECTION_HEADER2_LOCATOR}
     Element Should Contain          ${TEAM_SECTION_HEADER2_LOCATOR}     ${TEAM_SECTION_HEADER2_CONTENT}
 
 
