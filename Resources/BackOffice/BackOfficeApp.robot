@@ -2,9 +2,10 @@
 Documentation  Provides the high level keywords for testing BackOffice application
 Resource       ./PO/BackOffice.LandingPage.robot
 Resource       ./PO/BackOffice.TopNavSection.robot
+Resource        ../../Data/InputData.robot
 
 *** Variables ***
-${BACK_OFFICE_URL}         http://www.robotframeworktutorial.com/back-office/
+
 
 *** Keywords ***
 Go To Landing Page

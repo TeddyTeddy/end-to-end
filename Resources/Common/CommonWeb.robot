@@ -1,9 +1,7 @@
 *** Settings ***
 Documentation   Contains keywords that are app independent
 Library         SeleniumLibrary
-
-*** Variables ***
-${BROWSER}      firefox
+Resource        ../../Data/InputData.robot
 
 *** Keywords ***
 Test Setup

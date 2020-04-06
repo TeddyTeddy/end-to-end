@@ -3,9 +3,10 @@ Documentation  Provides the high level keywords for testing FrontOffice applicat
 Resource       ./PO/FrontOffice.LandingPage.robot
 Resource       ./PO/FrontOffice.TeamSection.robot
 Resource       ./PO/FrontOffice.TopNavSection.robot
+Resource        ../../Data/InputData.robot
 
 *** Variables ***
-${FRONT_OFFICE_URL}         http://www.robotframeworktutorial.com/front-office/
+
 
 *** Keywords ***
 Go To Landing Page
