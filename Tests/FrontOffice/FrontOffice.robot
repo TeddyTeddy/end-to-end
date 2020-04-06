@@ -1,13 +1,13 @@
 *** Settings ***
 Documentation   A test script file testing the front office webpage
-Resource        ../Resources/FrontOfficeApp.robot
-Resource        ../Resources/CommonWeb.robot
+Resource        ../../Resources/FrontOffice/FrontOfficeApp.robot
+Resource        ../../Resources/Common/CommonWeb.robot
 
 Test Setup      CommonWeb.Test Setup
 Test Teardown   CommonWeb.Test Teardown
 
 # To run
-# python -m robot  -d Results/ Tests/FrontOffice.robot
+# python -m robot  -d Results/ Tests/FrontOffice/FrontOffice.robot
 
 *** Variables ***
 
