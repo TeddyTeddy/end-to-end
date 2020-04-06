@@ -1,0 +1,1 @@
+python -m robot  -v BROWSER:ff -d Results/ Tests/

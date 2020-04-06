@@ -1,19 +1,19 @@
 *** Settings ***
 Documentation  Provides the high level keywords for testing FrontOffice application
-Resource       ./PO/LandingPage.robot
-Resource       ./PO/TeamSection.robot
-Resource       ./PO/TopNavSection.robot
+Resource       ./PO/FrontOffice.LandingPage.robot
+Resource       ./PO/FrontOffice.TeamSection.robot
+Resource       ./PO/FrontOffice.TopNavSection.robot
 
 *** Variables ***
-${URL}         http://www.robotframeworktutorial.com/front-office/
+${FRONT_OFFICE_URL}         http://www.robotframeworktutorial.com/front-office/
 
 *** Keywords ***
 Go To Landing Page
-    LandingPage.Do Goto    ${URL}
-    LandingPage.Verify Loaded
-    TopNavSection.Do Verify "TEAM" Item Exists
+    FrontOffice.LandingPage.Do Goto    ${FRONT_OFFICE_URL}
+    FrontOffice.LandingPage.Verify Loaded
+    FrontOffice.TopNavSection.Do Verify "TEAM" Item Exists
 
 Select "TEAM" Item
-    TopNavSection.Do Select "TEAM" Item
-    TeamSection.Do Verify "Team Section" Contents
+    FrontOffice.TopNavSection.Do Select "TEAM" Item
+    FrontOffice.TeamSection.Do Verify "Team Section" Contents
 
