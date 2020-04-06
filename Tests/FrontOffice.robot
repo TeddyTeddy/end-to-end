@@ -6,6 +6,9 @@ Resource        ../Resources/CommonWeb.robot
 Test Setup      CommonWeb.Test Setup
 Test Teardown   CommonWeb.Test Teardown
 
+# To run
+# python -m robot  -d Results/ Tests/FrontOffice.robot
+
 *** Variables ***
 
 
